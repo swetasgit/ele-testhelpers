@@ -96,7 +96,7 @@ func NewSUT() *SUT {
 
 	host := os.Getenv("COS_HOST")
 	if host == "" {
-		host = "127.0.0.1:2222"
+		host = "127.0.0.1 -p 2222"
 	}
 
 	testVersion := os.Getenv("TEST_VERSION")
